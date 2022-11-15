@@ -1,3 +1,76 @@
 /* Your styles go here */
 @import url("bootstrap/dist/css/bootstrap.min.css");
 @import url("bootstrap-icons/font/bootstrap-icons.css");
+
+body{
+    background: rgb(48, 48, 48);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.content > h1, .content > p{
+    padding-top: 40px;
+    padding-left: 10%;
+    
+}
+.jumbotron{
+    background: url(https://images.unsplash.com/photo-1526289034009-0240ddb68ce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80);
+    height: 200px;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+.custom-color {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (min-width: 600px) {
+   .nav1{
+    display: block;
+   }
+   .nav2{
+    display: none;
+   }
+}
+@media only screen and (max-width: 599px) {
+    .nav1{
+     display: none;
+    }
+    .nav2{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+     
+    }
+    .custom-toggler.navbar-toggler {
+        border-color: white;
+    }
+      
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+ }
+ /*to store images into localhost*/
+ .storeImg{
+    background-image: url('..\..\src\images\AbinadiRender.png');
+    background-image: url('..\..\src\images\AngleCemetaryCoverArt.png');
+    background-image: url('..\..\src\images\asdf.png');
+    background-image: url('..\..\src\images\BirdHelmLogo.png');
+    background-image: url('..\..\src\images\Cave2.png');
+    background-image: url('..\..\src\images\CaveWithTreeRender.png');
+    background-image: url('..\..\src\images\Curse1.png');
+    background-image: url('..\..\src\images\EchoArena.png');
+    background-image: url('..\..\src\images\EyeBallsProcedural.png');
+    background-image: url('..\..\src\images\FantasyIsolatedPort.png');
+ }
+
+ .pics > div > img{
+    border-radius: 50%;
+ }
+ .main{
+    background: rgba(0, 0, 0, .8);
+ }
