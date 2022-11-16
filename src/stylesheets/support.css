@@ -1,0 +1,83 @@
+/* Your styles go here */
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+
+body{
+    background: url(http://evansbreefc416.weebly.com/uploads/5/0/9/0/50908833/668288_orig.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    
+}
+.custom-color {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media only screen and (min-width: 600px) {
+   .nav1, .remaining{
+    display: block;
+   }
+   .nav2, #myForm{
+    display: none;
+   }
+   
+}
+@media only screen and (max-width: 599px) {
+    .nav1, #myFormBG, .remaining{
+     display: none;
+    }
+    .nav2{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+     
+    }
+    .custom-toggler.navbar-toggler {
+        border-color: white;
+    }
+      
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+ }
+ /*to store images into localhost*/
+ .storeImg{
+    background-image: url('..\..\src\images\AbinadiRender.png');
+    background-image: url('..\..\src\images\AngleCemetaryCoverArt.png');
+    background-image: url('..\..\src\images\asdf.png');
+    background-image: url('..\..\src\images\BirdHelmLogo.png');
+    background-image: url('..\..\src\images\Cave2.png');
+    background-image: url('..\..\src\images\CaveWithTreeRender.png');
+    background-image: url('..\..\src\images\Curse1.png');
+    background-image: url('..\..\src\images\EchoArena.png');
+    background-image: url('..\..\src\images\EyeBallsProcedural.png');
+    background-image: url('..\..\src\images\FantasyIsolatedPort.png');
+ }
+ .main{
+    background: rgba(0, 0, 0, .95);
+    }
+.bottom{
+        text-align: center;
+        width: 100%;
+        background: rgba(0, 0, 0, .8);
+        padding:50px;
+        height: calc(100% - 300px); 
+        }
+ img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+ }
+ .remaining{
+    background:  rgba(0, 0, 0, .8);
+    position: relative;
+    padding: 250px;
+    width: 100%;
+   
+ }
+

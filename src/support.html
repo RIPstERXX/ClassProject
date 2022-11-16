@@ -7,7 +7,7 @@
     <meta name="robots" content="index,follow" />
     <meta name="description" content="TODO: A starter project for ..." />
 
-    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/support.css" />
   </head>
 
   <body>
@@ -60,38 +60,71 @@
        
       </ul>
     </div>
-    
-    <div class="col-md-6">
-        <div class="row row-cols-3 row-cols-md-3">
-            <div class="col" id="i1"></div>
-            <div class="col" id="i2"></div>
-            <div class="col" id="i3"></div>
-            <div class="col" id="i4"></div>
-            <div class="col" id="i5"></div>
-            <div class="col" id="i6"></div>
-            <div class="col" id="i7"></div>
-            <div class="col" id="i8"></div>
-            <div class="col" id="i9"></div>
-            <div class="col" id="i10"></div>
-            <div class="col" id="i11"></div>
-            <div class="col" id="i12"></div>
-            <div class="col" id="i13"></div>
-            <div class="col" id="i14"></div>
-            <div class="col" id="i15"></div>
-            <div class="col" id="i16"></div>
-            <div class="col" id="i17"></div>
-            <div class="col" id="i18"></div>
-            <div class="col" id="i19"></div>
-            <div class="col" id="i20"></div>
-            <div class="col" id="i21"></div>
-            <div class="col" id="i22"></div>
-            <div class="col" id="i23"></div>
-        </div>
+    <div class="container py-5">
+      <h1 class="text-light">Support!</h1>
+      <p class="text-light">You thought this was for your support? Nah fam! Its to support me!</p>
     </div>
+    <div class="container .d-none .d-sm-block py-5">
+      <div class="input-group" id="myFormBG">
+          <span class="input-group-text bg-dark text-light">First Name</span>
+          <input type="first_name" aria-label="First name" class="form-control" id="first_name">
+          <span class="input-group-text bg-dark text-light">Last Name</span>
+          <input type="last_name" aria-label="Last name" class="form-control" id="last_name">
+          <span class="input-group-text bg-dark text-light">$</span>
+          <input type="number" ariua-label="Amount" class="form-control amount" id="amount">
+          <button type="submit" class="btn btn-success" id="submit">Donate</button>
+          <button type="reset" class="btn btn-danger" id="reset">Cancel</button>
+      </div>
+
+      <form class="my-5 text-light" id="myForm">
+        <div class="mb-3">
+          <label for="first_name" class="form-label">First Name</label>
+          <input type="first_name" class="form-control first" id="first_name_sm" aria-describedby="first_name_sm">
+        </div>
+        <div class="mb-3">
+          <label for="last_name" class="form-label">Last Name</label>
+          <input type="last_name" class="form-control last" id="last_name_sm">
+        </div>
+        <div class="mb-3">
+          <label for="amount" class="form-label">$</label>
+          <input type="number" class="form-control amount" id="amount_sm">
+        </div>
+        <button type="submit" class="btn btn-success" id="submit_sm">Donate</button>
+        <button type="reset" class="btn btn-danger" id="reset">Cancel</button>
+      </form>
+    </div>
+    
+    
+   
     
       
     </div>
+    <div class="bottom">
+      <h1 class="text-light text-center">I couldn't do it without all of you!</h1>
+      <img src="./images/ProfilePic.JPG" alt="profilePic">
+      <br>
+      <br>
+      <br>
+  
+      <div class="container">
+        <table class="table table-striped table-hover bg-dark text-light" >
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Donation Amount</th>
+        
+            </tr>
+          </thead>
+          <tbody id="myTable">
+          </tbody>
+        </table>
+      </div>
+     
+    </div>
+    <div class="remaining"></div>
 
-    <script type="module" src="./javascripts/main.js"></script>
+    <script type="module" src="./javascripts/donationTable.js"></script>
   </body>
 </html>
