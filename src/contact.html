@@ -7,7 +7,7 @@
     <meta name="robots" content="index,follow" />
     <meta name="description" content="TODO: A starter project for ..." />
 
-    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <link rel="stylesheet" href="./stylesheets/contact.css" />
   </head>
 
   <body>
@@ -41,30 +41,58 @@
     </div>
     <div class="main">
       <div class="nav1">
-      <ul class="nav justify-content-center bg-dark md">
-        <li class="nav-item">
-            <a class="nav-link active text-light" href="index.html">Home</a>
-          </li>
+        <ul class="nav justify-content-center bg-dark md">
           <li class="nav-item">
-            <a class="nav-link text-light" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="support.html">Support</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-light" href="contact.html">Contact</a>
-          </li>
-       
-      </ul>
+              <a class="nav-link active text-light" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="support.html">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="contact.html">Contact</a>
+            </li>
+        </ul>
+      
     </div>
-    
-    
+    <div class="container text-light py-3">
+      <h1>Contact</h1>
+      
+      <div class="contact_form container py-4">
+        <p>This is my hobby, but I take requests. If you want to reach out to me to make a piece for you I do most of my work with a "pay what you want" basis. You can upload a file for reference if you would like, or leave a detailed description. I will respond as soon as I am able.</p>
+        <form>
+          <div class="form-group py-3">
+            <label for="input1">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="form-group py-3">
+            <input type="Subject" class="form-control" id="subject" placeholder="Subject">
+          </div>
+          <div class="form-group py-3">
+            <textarea class="form-control" id="body" rows="5" placeholder="Body"></textarea>
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlFile1">Upload Reference (optional)</label>
+            <input type="file" class="form-control-file" id="file">
+            <button type="button" class="btn btn-primary" id="send">Send</button>
+            <button type="button" class="btn btn-danger" id="cancel">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container text-light">
+    <p>Email: ethanmeier113@gmail.com</p>
+    </div>
       
     </div>
 
-    <script type="module" src="./javascripts/main.js"></script>
+    <script type="module" src="./javascripts/contact.js"></script>
   </body>
 </html>
