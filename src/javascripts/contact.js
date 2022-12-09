@@ -1,6 +1,5 @@
-import _default from "@popperjs/core/lib/modifiers/popperOffsets"
+
 import "bootstrap"
-import { Alert } from "bootstrap"
 
 
 function send(event){

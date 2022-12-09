@@ -1,6 +1,6 @@
 //TODO - Your ES6 JavaScript code (if any) goes here
 import "bootstrap"
-import { Alert } from "bootstrap"
+
 
 let initial_names = [
     {
