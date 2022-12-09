@@ -1,0 +1,87 @@
+/* Your styles go here */
+@import url("bootstrap/dist/css/bootstrap.min.css");
+@import url("bootstrap-icons/font/bootstrap-icons.css");
+
+body{
+    background: rgb(48, 48, 48);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.content > h1{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    
+}
+.content > p, ul{
+        
+        padding-left: 10%;
+        padding-right: 10%;
+
+}
+.content > img{
+    height: 200px;
+    padding-left: 10px;
+    padding-right: 10%;
+    float:right;
+}
+.content > .blender{
+    height: 100px;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10px;
+}
+.content > h3 {
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.content > video {
+   width: 100%;
+   padding-left: 10%;
+   padding-right: 10%;
+}
+.custom-color {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+footer{
+    padding-bottom: 75px;
+   }
+@media only screen and (min-width: 600px) {
+   .nav1{
+    display: block;
+   }
+   .nav2{
+    display: none;
+   }
+   
+}
+@media only screen and (max-width: 599px) {
+    .nav1{
+     display: none;
+    }
+    .nav2{
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+     
+    }
+    .custom-toggler.navbar-toggler {
+        border-color: white;
+    }
+      
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+ }
+ 
+ img{
+    width: 100%;
+ }
